@@ -1,0 +1,166 @@
+body {
+  font-family: "Poppins", sans-serif;
+  max-width: 1280px;
+  margin: 0 auto;
+  background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fget.wallhere.com%2Fphoto%2Fsunlight-abstract-grass-sky-calm-green-gradient-texture-horizon-atmosphere-cloud-daytime-1280x800-px-computer-wallpaper-meteorological-phenomenon-ecoregion-778001.jpg&f=1&nofb=1&ipt=158e3da1a7cd712b5481f3bb95343396eb42f9671a705b28d7906a8837b3866a&ipo=images);
+  background-color: rgb(113, 113, 113);
+  color: #000000;
+}
+
+body.modo-escuro {
+  background-color: rgb(21, 21, 21);
+  background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fgetwallpapers.com%2Fwallpaper%2Ffull%2Fb%2Fd%2Fe%2F1408551-pokemon-desktop-background-3840x2160-for-mobile-hd.jpg&f=1&nofb=1&ipt=3c5f0f0ee064e4d761ab60f4f67d660de41f0a8edbfd62b361d33f0976f0a1aa&ipo=images);
+  color: #f5f5f5;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+header .logo,
+header .imagem-botao {
+  width: 50px;
+  transition: 0.2s ease-in-out;
+}
+
+header #botao-alterar-tema {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+header .logo:hover,
+header .imagem-botao:hover {
+  transform: scale(1.35);
+  cursor: pointer;
+}
+
+main {
+  padding: 25px;
+}
+main .listagem-pokemon {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+main .cartao-pokemon {
+  background-color: aliceblue;
+  width: 180px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  border-radius: 15px;
+  transition: 0.2s ease-in-out;
+  border: 3px solid #333333;
+}
+
+main .cartao-pokemon:hover {
+  background-color: rgb(138, 169, 203);
+  transform: scale(1.05);
+}
+
+.modo-escuro .cartao-pokemon:hover {
+  background-color: #a8a8a8;
+}
+
+.modo-escuro .cartao-pokemon{
+    background-color: #717171;
+    color: #000000;
+}
+
+main .cartao-pokemon .informacoes {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  border: 3px solid #333333;
+}
+
+main .cartao-pokemon .informacoes span {
+  padding: 3px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+main .cartao-pokemon .gif {
+  width: 90px;
+  height: 90px;
+}
+
+main .cartao-pokemon .tipos {
+  display: flex;
+  gap: 15px;
+}
+
+main .cartao-pokemon .tipo-grama {
+  background-color: rgb(100, 196, 95);
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.modo-escuro .cartao-pokemon .tipo-grama {
+  background-color: rgb(62, 114, 59);
+  border-radius: 15px;
+  padding: 5px;
+}
+
+main .cartao-pokemon .tipo-veneno {
+  background-color: rgb(229, 137, 237);
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.modo-escuro .cartao-pokemon .tipo-veneno {
+  background-color: rgb(139, 83, 144);
+  border-radius: 15px;
+  padding: 5px;
+}
+
+main .cartao-pokemon .tipo-fogo {
+  background-color: rgb(255, 174, 0);
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.modo-escuro .cartao-pokemon .tipo-fogo {
+  background-color: rgb(190, 131, 4);
+  border-radius: 15px;
+  padding: 5px;
+}
+
+main .cartao-pokemon .tipo-agua {
+  background-color: rgb(142, 193, 252);
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.modo-escuro .cartao-pokemon .tipo-agua {
+  background-color: rgb(87, 119, 155);
+  border-radius: 15px;
+  padding: 5px;
+}
+
+main .cartao-pokemon .tipo-inseto {
+  background-color: rgb(189, 225, 133);
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.modo-escuro .cartao-pokemon .tipo-inseto {
+  background-color: rgb(116, 143, 74);
+  border-radius: 15px;
+  padding: 5px;
+}
+
+main .descricao {
+  font-size: 12px;
+  max-height: 80px;
+  overflow-y: scroll;
+  padding-right: 5px;
+}
